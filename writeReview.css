@@ -1,0 +1,186 @@
+ @font-face
+{
+	font-family:'Armata';
+	src:url('armata.otf');
+}
+
+@font-face
+{
+	font-family:'Yukari';
+	src:url('yukari.ttf');
+}
+
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+#footer
+{
+text-align:center;
+font-family:Armata;
+font-size:12px;
+opacity:0.5;
+position:absolute;
+bottom:10px;
+width:100%;
+}
+
+#footer a
+{
+	text-decoration:none;
+	color:black;
+}
+	
+html, body
+{
+	min-height:100%;
+	min-width:100%;
+	position:absolute;
+}
+
+body
+{
+	background-color:#ffffff;
+	background-image:url('whiteGrid.png');
+}
+
+#topStripe
+{
+	width:100%;
+	position:absolute;
+	top:0px;
+	height:50px;
+	background-color:#2b2b2b;
+	z-index:1;
+}
+
+#bottomStripe
+{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	height:5px;
+	background-color:#c92828;
+}
+
+#nav
+{
+	width:960px;
+	display:block;
+	margin:auto;
+	height:50px;
+	z-index:10;
+	position:relative;
+}
+
+#logo
+{
+	width:200px;
+	float:left;
+	padding:5px;
+	background-color:#f2f2f2;
+	border:10px solid #2b2b2b;
+	background-image:url('whiteGrid.png');
+}
+
+#navLinks
+{
+	float:right;
+	margin-top:10px;
+}
+
+#navLinks a
+{
+	color:#f2f2f2;
+	margin:25px;
+	font-family:Yukari;
+	text-decoration:none;
+	font-size:20px;
+}
+
+#navLinks a span
+{
+	color:#c92828;
+}
+
+#container
+{
+	width:960px;
+	display:block;
+	margin:auto;
+	margin-top:85px;
+}
+
+#right
+{
+	width:740px;
+	float:right;
+	padding:10px;
+	padding-top:0px;
+	font-family:Armata;
+	text-align:right;
+}
+
+#message
+{
+	text-align:justify;
+	font-size:14px;
+	word-spacing:5px;
+	line-height:23px;
+}
+
+#left
+{
+	width:180px;
+	float:left;
+	padding:10px;
+	padding-top:0px;
+	line-height:50px;
+}
+
+#left p
+{
+	font-family:Yukari;
+	width:150px;
+	text-align:center;
+	display:block;
+	margin:auto;
+	background-color:#2b2b2b;
+	margin-top:25px;
+	margin-bottom:25px;
+	font-size:20px;
+}
+
+#left p a
+{
+	text-decoration:none;
+	color:#f2f2f2;
+}
+
+h1
+{
+	color:#2b2b2b;
+}
+
+#right p
+{
+	color:#c92828;
+}
+
+textarea
+{
+	padding:10px;
+}
+
+input[type="submit"]
+{
+	font-family:Armata;
+	padding:5px;
+	border:none;
+	background-color:#c92828;
+	color:#f2f2f2;
+	cursor:pointer;
+	font-size:12px;
+}

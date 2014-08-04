@@ -1,0 +1,300 @@
+@font-face
+{
+	font-family:'Armata';
+	src:url('armata.otf');
+}
+
+@font-face
+{
+	font-family:'Yukari';
+	src:url('yukari.ttf');
+}
+
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+html,body
+{
+	min-height:100%;
+	width:100%;
+	position:absolute;
+}
+
+body
+{
+	background-image:url('whiteGrid.png');
+}
+
+#topStripe
+{
+	height:5px;
+	width:100%;
+	background-color:#2b2b2b;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+#bottomStripe
+{
+	height:5px;
+	width:100%;
+	background-color:#c92828;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+
+#container
+{
+	width:800px;
+	display:block;
+	margin:15px auto;
+}
+
+#logo
+{
+	display:block;
+	margin:auto;
+}
+
+#desc
+{
+	font-family:Armata;
+	text-align:center;
+	color:#2b2b2b;
+	font-size:14px;
+}
+
+#desc b
+{
+	color:#c92828;
+}
+
+#boxContainer
+{
+	width:630px;
+	display:block;
+	margin:auto;
+	background-image:url('blackGrid.png');
+	border:5px solid #2b2b2b;
+}
+
+.box
+{
+	width:180px;
+	float:left;
+	text-align:justify;
+	font-family:Armata;
+	color:#ffffff;
+	font-size:14px;
+	padding:15px;
+}
+
+.heading
+{
+	text-align:center;
+	font-family:Yukari;
+	color:#c92828;
+	font-size:20px;
+}
+
+.clear
+{
+	clear:both;
+}
+
+#signBox
+{
+	display:block;
+	width:360px;
+	margin:auto;
+	font-family:Yukari;
+}
+
+#signIn, #signUp, #browse
+{
+	background-color:#2b2b2b;
+	text-align:center;
+	font-size:24px;
+	color:#ffffff;
+	padding:5px 10px;
+	cursor:pointer;
+	width:80px;
+	margin:10px;
+	float:left;
+}
+
+#or
+{
+	text-align:center;
+	color:#2b2b2b;
+	font-family:Impact;
+}
+
+#fbSignIn
+{
+	text-align:center;
+	padding:5px 10px;
+	background-color:#3b5998;
+	display:block;
+	width:250px;
+	margin:auto;
+	
+}
+
+#fbSignIn a
+{
+	color:#ffffff;
+	font-family:Yukari;
+	font-size:24px;
+	text-decoration:none;
+}
+
+#dark
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:0.9;
+	display:none;
+	z-index:1;
+}
+
+#signInBox, #signUpBox
+{
+	border:10px solid black;
+	text-align:center;
+	width:280px;
+	padding-top:15px;
+	padding-bottom:15px;
+	line-height:50px;
+	background-color:#c92828;
+	display:none;
+	position:absolute;
+	z-index:10;
+	font-family:Armata;
+	color:#ffffff;
+	font-size:14px;
+}
+
+#signInBox input, #signUpBox input
+{
+	font-family:Armata;
+	font-size:16px;
+	color:#2b2b2b;
+	padding:5px;
+}
+
+#signInBox span
+{
+	font-size:12px;
+	font-family:Armata;
+}
+
+.formButtons
+{
+	width:200px;
+	display:block;
+	margin:auto;
+}
+
+.formButtons *
+{
+	background-color:#2b2b2b;
+	border:none;
+	cursor:pointer;
+}
+
+.back
+{
+	float:left;
+}
+
+.submit
+{
+	float:right;
+}
+
+.error
+{
+	line-height:25px;
+	display:none;
+}
+
+#footer
+{
+	text-align:center;
+	font-family:Armata;
+	font-size:12px;
+	opacity:0.5;
+	position:absolute;
+	bottom:10px;
+	width:100%;
+}
+
+#footer a
+{
+	text-decoration:none;
+	color:black;
+}
+
+@media only screen and (min-width:601px) and (max-width:992px)
+{
+	#container
+	{
+		width:600px;
+	}
+	
+	#boxContainer
+	{
+		width:600px;
+	}
+	
+	.box
+	{
+		width:170px;
+	}
+}
+
+@media only screen and (max-width:600px)
+{
+	#logo
+	{
+		width:300px;
+	}
+	
+	#container
+	{
+		width:300px;
+	}
+	
+	#boxContainer
+	{
+		width:250px;
+	}
+	
+	.box
+	{
+		width:220px;
+		padding:15px;
+	}
+	
+	#signBox
+	{
+		width:140px;
+	}
+
+	#signBox *
+	{
+		clear:both;
+		text-align:center;
+		width:100px;
+	}
+}

@@ -1,0 +1,307 @@
+@font-face
+{
+	font-family:'Armata';
+	src:url('armata.otf');
+}
+
+@font-face
+{
+	font-family:'Yukari';
+	src:url('yukari.ttf');
+}
+
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+#footer
+{
+text-align:center;
+font-family:Armata;
+font-size:12px;
+opacity:0.5;
+position:absolute;
+bottom:10px;
+width:100%;
+}
+
+#footer a
+{
+	text-decoration:none;
+	color:black;
+}
+	
+html, body
+{
+	min-height:100%;
+	min-width:100%;
+	position:absolute;
+}
+
+body
+{
+	background-color:#ffffff;
+	background-image:url('whiteGrid.png');
+}
+
+#dark
+{
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:0.9;
+	display:none;
+	z-index:1;
+}
+
+#alertBox
+{
+	border:10px solid black;
+	text-align:center;
+	width:280px;
+	height:165px;
+	padding-top:15px;
+	padding-bottom:15px;
+	line-height:50px;
+	background-color:#c92828;
+	display:none;
+	position:absolute;
+	z-index:10;
+	font-family:Armata;
+	color:#ffffff;
+	font-size:14px;
+}
+
+#alertBox input
+{
+	border:none;
+	background-color:#2b2b2b;
+	color:#f2f2f2;
+	font-size:16px;
+	font-family:Armata;
+	padding:5px;
+	cursor:pointer;
+}
+
+#topStripe
+{
+	width:100%;
+	position:absolute;
+	top:0px;
+	height:50px;
+	background-color:#2b2b2b;
+	z-index:1;
+}
+
+#bottomStripe
+{
+	width:100%;
+	position:absolute;
+	bottom:0px;
+	height:5px;
+	background-color:#c92828;
+}
+
+#nav
+{
+	width:960px;
+	display:block;
+	margin:auto;
+	height:50px;
+	z-index:10;
+	position:relative;
+}
+
+#logo
+{
+	width:200px;
+	float:left;
+	padding:5px;
+	background-color:#f2f2f2;
+	border:10px solid #2b2b2b;
+	background-image:url('whiteGrid.png');
+}
+
+#navLinks
+{
+	float:right;
+	margin-top:10px;
+}
+
+#navLinks a
+{
+	color:#f2f2f2;
+	margin:25px;
+	font-family:Yukari;
+	text-decoration:none;
+	font-size:20px;
+}
+
+#navLinks a span
+{
+	color:#c92828;
+}
+
+#container
+{
+	width:960px;
+	display:block;
+	margin:auto;
+	margin-top:85px;
+}
+
+#right
+{
+	width:740px;
+	float:right;
+	padding:10px;
+	padding-top:0px;
+	font-family:Armata;
+	text-align:right;
+}
+
+#left
+{
+	width:180px;
+	float:left;
+	padding:10px;
+	padding-top:0px;
+	line-height:50px;
+}
+
+#left p
+{
+	font-family:Yukari;
+	width:150px;
+	text-align:center;
+	display:block;
+	margin:auto;
+	background-color:#2b2b2b;
+	margin-top:25px;
+	margin-bottom:25px;
+	font-size:20px;
+}
+
+#left p a
+{
+	text-decoration:none;
+	color:#f2f2f2;
+}
+
+#left a span
+{
+	color:#c92828;
+}
+
+#title
+{
+	font-size:32px;
+}
+#desc
+{
+	font-size:14px;
+	text-align:justify;
+	word-spacing:5px;
+	line-height:23px;
+}
+
+#tags
+{
+	margin-top:5px;
+}
+
+#tags a
+{
+	background-color:#d8d8d8;
+	color:#c92828;
+	text-decoration:none;
+	padding:2px;
+	font-size:14px;
+}
+
+.info
+{
+	font-size:12px;
+}
+
+.info .num
+{
+	font-size:32px;
+	color:#c92828;
+}
+
+.info .userLink
+{
+	text-decoration:none;
+	color:#c92828;
+}
+
+.info input
+{
+	font-family:Armata;
+	padding:5px;
+	border:none;
+	background-color:#c92828;
+	color:#f2f2f2;
+	cursor:pointer;
+}
+
+#showReviewComments
+{
+	font-size:14px;
+	cursor:pointer;
+	display:inline-block;
+	border:none;
+	background:none;
+	font-family:Armata;
+}
+
+.hide
+{
+	display:none;
+}
+
+#reviewComments
+{
+	font-size:14px;
+	line-height:15px;
+}
+
+#reviewComments a
+{
+	color:#c92828;
+	text-decoration:none;
+}
+
+#reviewComment
+{
+	font-family:Armata;
+}
+
+#reviewCommentButton
+{
+	font-family:Armata;
+	padding:5px;
+	border:none;
+	background-color:#c92828;
+	color:#f2f2f2;
+	cursor:pointer;
+	font-size:12px;
+}
+
+.controls
+{
+	margin-top:10px;
+}
+
+.controls a
+{
+	text-decoration:none;
+	font-size:14px;
+	color:black;
+}
